@@ -5,11 +5,37 @@ body {
     background-color: #51c19e;
 }
 
+ul li {
+    font-family: 'Alegreya'
+}
+
 a {
     color: brown;
     text-decoration: none;
 }
 
+.head,
+h1,
+h2,
+h3 {
+    font-family: 'Acme', 'Monospace', 'Serif';
+}
+
+.input,
+.tabHead,
+.save,
+.saveEdit,
+#delete1,
+.pr {
+    font-family: 'Acme', 'Monospace', 'Serif';
+}
+
+p,
+{
+    font-family: 'Poiret One', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p,
 .note {
     border: none;
     border-radius: 5px;
@@ -124,8 +150,8 @@ input {
         font-size: 4vw;
     }
     .tab {
-        margin-left: 15%;
-        width: 70%;
+        margin-left: 2%;
+        width: 90%;
         left: 0%;
     }
     .addTab {
