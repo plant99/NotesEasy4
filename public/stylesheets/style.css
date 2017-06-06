@@ -1,0 +1,205 @@
+body {
+    text-align: center;
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: #51c19e;
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+}
+
+.note {
+    border: none;
+    border-radius: 5px;
+    border-bottom-right-radius: 10px;
+    margin: 20px auto;
+    font-family: monospace;
+}
+
+.pr {
+    float: left;
+    margin-left: 1%;
+    font-size: 1.5vw;
+    border-radius: 5px;
+    padding: 0.5vw 1vw;
+}
+
+.pr:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.red,
+.red1 {
+    margin-left: 28%;
+    background-color: red;
+}
+
+.yellow,
+.yellow1 {
+    background-color: yellow;
+}
+
+.green,
+.green1 {
+    background-color: green;
+}
+
+input {
+    font-size: 1.5vw;
+    border-radius: 6px;
+}
+
+.mainBox {
+    clear: both;
+}
+
+.tabHead {
+    float: left;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-right: 1vw;
+    color: midnightblue;
+    background-color: ghostwhite;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    margin-left: 1%;
+}
+
+.tab {
+    padding: 2vw;
+    border: 1px solid black;
+    border-radius: 0.5vw;
+    position: absolute;
+    left: 30%;
+    width: 40%;
+    display: none;
+}
+
+.add {
+    z-index: 99;
+    display: block;
+}
+
+.tabHead:hover {
+    cursor: pointer;
+}
+
+.addTab {
+    margin-left: 39%;
+}
+
+.dummy {
+    clear: both;
+}
+
+@media only screen and (max-device-width: 700px) {
+    h1 {
+        font-size: 10vw;
+    }
+    .note {
+        width: 75%;
+        font-size: 4vw;
+        height: 40%;
+    }
+    p,
+    input {
+        font-size: 6vw;
+    }
+    input {
+        border-radius: 10px;
+        font-size: 6vw;
+    }
+    .pr {
+        font-size: 4vw;
+        margin-left: 1%;
+    }
+    .red,
+    .red1 {
+        margin-left: 25%;
+    }
+    .tabHead {
+        font-size: 4vw;
+    }
+    .tab {
+        margin-left: 15%;
+        width: 70%;
+        left: 0%;
+    }
+    .addTab {
+        margin-left: 25%;
+    }
+}
+
+ul li {
+    padding: 20px;
+    font-size: 1.5vw;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+a {
+    text-decoration: none;
+}
+
+.c1 {
+    color: green;
+}
+
+.c2 {
+    color: yellow;
+}
+
+.c3 {
+    color: red;
+}
+
+a:hover {
+    color: white;
+    transition-duration: 0.3s;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
+.sNo,
+.sNoDelete {
+    width: 35%;
+}
+
+#editNote,
+#editNoteDelete {
+    margin-left: 0px;
+    padding: 0px;
+    border: none;
+    border-radius: 5px;
+    border-bottom-right-radius: 10px;
+    margin: 20px auto;
+    font-family: monospace;
+}
+
+@media only screen and (max-device-width: 700px) {
+    h1 {
+        font-size: 10vw;
+    }
+    .note,
+    #editNote,
+    #editNoteDelete {
+        width: 75%;
+        font-size: 4vw;
+        height: 40%;
+    }
+    p,
+    input,
+    ul li {
+        font-size: 6vw;
+    }
+    input {
+        border-radius: 10px;
+    }
+}

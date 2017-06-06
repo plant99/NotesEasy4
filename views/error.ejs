@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Error</title>
+
+    <link rel="shortcut icon" href="images/icon.png">
+	<style type="text/css">
+		body {
+            text-align: center; 
+            padding: 50px;
+            font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+            background-color: #51c19e ;
+          }
+          p{
+          	font-size: 2vw ;
+          }
+          @media only screen and (max-device-width:540px){
+          	p{
+          	font-size: 6vw ;
+           }
+           code{
+            font-size: 4vw;
+           }
+          }
+
+
+	</style>
+</head>
+<body>
+	<p><%=message%></p>
+	<br>
+	<code><%=email%></code>
+	<p>?</p>
+</body>
+</html>

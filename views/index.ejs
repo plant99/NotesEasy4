@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NotesEasy</title>
+    <link rel="shortcut icon" href="images/icon.png">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+
+<body>
+    <h1>NotesEasy</h1>
+    <div class="tabs">
+        <div class="addTab tabHead">ADD</div>
+        <div class="listTab tabHead">LIST</div>
+        <div class="editTab tabHead">EDIT</div>
+        <div class="deleteTab tabHead">DELETE</div>
+    </div>
+    <div class="dummy"></div>
+
+    <!--Add Notes -->
+
+
+    <div class="add tab">
+        <div class="priority">
+            <p>Set Priority</p>
+            <div class="colors">
+                <div class="pr red">High</div>
+                <div class="pr yellow">Medium</div>
+                <div class="pr green">Low</div>
+            </div>
+        </div>
+        <div class="mainBox">
+            <textarea class="note" name="note"></textarea>
+            <br>
+            <input type="text" name="priority" style="display: none;" class="priorityValue" value="1">
+            <input type="submit" value="Save Note" class="save">
+        </div>
+    </div>
+
+    <!--List Notes -->
+
+    <div class="list tab">
+        <p>Here is the list of notes:</p>
+        <p><input type="button" class="sort" value="Sort"> (High priority on the top)</p>
+        <ul class="listHolder"></ul>
+    </div>
+
+    <!--Edit Notes -->
+
+    <div class="edit tab">
+        <label><p>Id of the text you want to edit:</p><input type="text" class="sNo"></label>
+        <div class="priority">
+            <p>Edit Priority</p>
+            <div class="colors">
+                <div class="pr red1">High</div>
+                <div class="pr yellow1">Medium</div>
+                <div class="pr green1">Low</div>
+            </div>
+        </div>
+        <div class="dummy"></div>
+
+
+        <div class="dummy"></div>
+        <div class="editContent">
+            <p>Edit note:</p>
+            <textarea id="editNote" name="content"></textarea>
+        </div>
+        <br>
+        <input type="text" name="priority" style="display: none;" id="x" class="priorityValueEdit" value="1">
+        <input type="submit" value="Save" class="saveEdit">
+        <br>
+    </div>
+
+
+    <!--Delete Notes -->
+
+
+    <div class="delete tab">
+
+        <p>Enter the ID of the note you want to delete1</p>
+        <input type="text" name="sNo" class="sNoDelete">
+        <br>
+        <p id="preview"></p>
+        <br>
+        <input type="button" name="delete1" value="Delete1" id="delete1">
+
+    </div>
+    <!-- End of content -->
+
+    <script type="text/javascript" src="javascripts/script.js"></script>
+</body>
+
+</html>
+
+<!--
+    <label><p>Id of the text you want to edit:</p><input type="text" class="sNoDelete"></label>
+        <div class="preview">
+
+        </div>
+
+
+-->
